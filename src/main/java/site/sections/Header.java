@@ -23,6 +23,7 @@ public class Header extends Section {
     }
 
     public void selectMenuItem(MenuItems item) {
+        // TODO Take a look on IDEA warning
         navigation.select(item);
     }
 
