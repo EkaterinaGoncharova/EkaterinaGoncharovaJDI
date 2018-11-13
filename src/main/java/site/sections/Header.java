@@ -16,7 +16,7 @@ public class Header extends Section {
     public Button profilePhoto;
 
     @FindBy(css = ".uui-navigation.m-l8")
-    public Menu navigation;
+    private Menu<MenuItems> navigation;
 
     public void checkUserName(Users user) {
         Assert.areEquals(profilePhoto.getText(), user.displayName);

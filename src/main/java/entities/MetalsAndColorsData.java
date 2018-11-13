@@ -12,13 +12,13 @@ public class MetalsAndColorsData {
 
     // TODO What is the point of static method ?
     // TODO Why don't you call it from the class instance ? L<S> d = data.getTextList() ?
-    public static List<String> getTextList(MetalsAndColorsData data) {
-        List<String> textList = new ArrayList<String>();
-        textList.add("Summary: " + String.valueOf(data.summary[0] + data.summary[1]));
-        textList.add("Elements: " + String.join(", ", data.elements));
-        textList.add("Color: " + data.color);
-        textList.add("Metal: " + data.metals);
-        textList.add("Vegetables: " + String.join(", ", data.vegetables));
+    public List<String> getTextList() {
+        List<String> textList = new ArrayList<>();
+        textList.add("Summary: " + String.valueOf(summary[0] + summary[1]));
+        textList.add("Elements: " + String.join(", ", elements));
+        textList.add("Color: " + color);
+        textList.add("Metal: " + metals);
+        textList.add("Vegetables: " + String.join(", ", vegetables));
         return textList;
     }
 

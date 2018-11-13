@@ -14,7 +14,7 @@ public class MetalsAndColorsFormTest extends TestsInit {
         //1 Login on JDI site as User
         homePage.open();
         // TODO This method should be parametrised.
-        login();
+        login(PITER_CHAILOVSKII);
         homePage.checkOpened();
         header.checkUserName(PITER_CHAILOVSKII);
 

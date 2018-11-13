@@ -11,9 +11,9 @@ import static org.testng.Assert.assertEquals;
 public class Result extends Section {
 
     @FindBy(css = ".results > li")
-    public TextList results;
+    private TextList results;
 
     public void checkMetalsAndColorsFormResult(MetalsAndColorsData data) {
-        assertEquals(results.getTextList(), MetalsAndColorsData.getTextList(data));
+        assertEquals(results.getTextList(), data.getTextList());
     }
 }
